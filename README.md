@@ -65,7 +65,7 @@ nix-env -i dialog
 pip3 install shell-gpt
 
 ```
-* The dialog package is not a requirement per se. Since most unix and unix-based distros come with `whiptail`, instead of installing `dialog`, all occurrences of dialog can be replaced by the command `whiptail` *
+*The dialog package is not a requirement per se. Since most unix and unix-based distros come with `whiptail`, instead of installing `dialog`, all occurrences of dialog can be replaced by the command `whiptail`.*
 
 ## Initialisation
 
