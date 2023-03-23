@@ -6,10 +6,53 @@ ByzantineGPT is what would happen if OpenAI's gpt model developed dissociative-i
 
 ## Requirements
 
-This script leverages a python tool called sgpt in order to tap into OpenAI's gpt model.
+This script leverages a python tool called `sgpt` in order to tap into OpenAI's gpt model.
 
 You can install it by typing the following command on your unix-based or unix operating system. 
 
+also `dialog` is required for tui to werk
+
+
+### Installing `dialog` on Linux
+
+#### Ubuntu/Debian
+
+```
+sudo apt-get update
+sudo apt-get install dialog
+```
+
+#### Fedora
+
+```
+sudo dnf install dialog
+```
+
+#### CentOS/RHEL
+
+```
+sudo yum install epel-release
+sudo yum install dialog
+```
+
+#### Arch Linux
+
+```
+sudo pacman -S dialog
+```
+
+### Installing `dialog` on macOS using `brew`
+
+```
+brew install dialog
+```
+
+### Installing `dialog` using `nix`
+
+```
+nix-env -i dialog
+```
+### Installing `shell-gpt` using pip3 
 ```
 pip3 install shell-gpt
 
