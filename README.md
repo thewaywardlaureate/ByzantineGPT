@@ -40,6 +40,12 @@ sudo yum install dialog
 ```
 sudo pacman -S dialog
 ```
+
+### Termux [Android]
+
+```
+pkg install dialog
+```
 ### Void Linux
 ```
 
