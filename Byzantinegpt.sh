@@ -1,5 +1,18 @@
 #!/bin/bash
 
+check_dependencies() {
+  if ! command -v dialog &>/dev/null; then
+    echo "The 'dialog' package is not installed. Please install it before running this script."
+    exit 1
+  fi
+  if ! command -v sgpt &>/dev/null; then
+    echo "The 'sgpt' package is not installed. Please install it before running this script."
+    exit 1
+  fi
+}
+
+check_dependencies
+
 clear 
 
 var=$(dialog --inputbox "Enter the fucking prompt you sick fuck:" 0 0 3>&1 1>&2 2>&3 3>&-); clear
@@ -43,6 +56,7 @@ then
   sgpt "Suggest me an Open-source and free software under non-restrictive licenses that is or does $var. If there is a command line alternative for the tool, mention that as well. Also explain how to use the program in as less words as possible. Explain how to install it on different platforms, prioritising GNU/Linux first. Then suggest me a random open-source software that is preferrable cli. Before the second reply, leave a space and precede the answer with the tag '[]'"
   exit
 fi
+
 
 
 
